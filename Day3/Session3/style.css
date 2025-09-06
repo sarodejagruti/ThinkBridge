@@ -1,0 +1,52 @@
+
+body {
+  background-color: #fdf6e3; /* soft beige */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+/* Container demo */
+.container {
+  color: rgb(203, 67, 67);
+  border: 2px solid red;
+  background-color: aqua;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading inside container */
+.container h1 {
+  margin: 0 0 10px 0;
+}
+
+/* Basic Box Model */
+.box {
+  width: 200px;                   
+  height: 100px;                  
+  background-color: lightblue;    
+  padding: 20px;                  
+  border: 10px solid orange;      
+  margin: 30px;                   
+  text-align: center;
+  font-weight: bold;
+  line-height: 60px;
+  border-radius: 10px;
+}
+
+/* Fancy Box with hover */
+.fancy {
+  background-color: #add8e6; 
+  box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.fancy:hover {
+  background-color: #87ceeb;
+  transform: scale(1.05);
+  cursor: pointer;
+}

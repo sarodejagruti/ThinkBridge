@@ -1,0 +1,185 @@
+/* General Styling */
+:root{
+    --radius: 10px;
+  --shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: sans-serif;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.section {
+  padding: 100px 0px 100px 0px;
+  max-width: 900px;
+  margin: 0 auto;
+
+}
+
+/* 1. Create a responsive header with a nav */
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.logo p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+/* Hamburger Menu Toggle */
+.menu-toggle {
+  display: none; /* Hide on larger screens */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 24px;
+  position: relative;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  margin-bottom: 5px;
+  transition: transform 0.3s ease;
+}
+
+.menu-toggle.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Navigation Links */
+nav a {
+  color: #333; /* Example default text color */
+  text-decoration: none;
+  padding: 10px 0; /* Adjust padding to make room for the border */
+  border-bottom: 2px solid transparent; /* A transparent border */
+  transition: border-bottom-color 0.3s ease;
+}
+
+nav a:hover {
+  border-bottom-color: dodgerblue; /* Change the border color on hover */
+}
+.nav-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Horizontal nav on desktop */
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+}
+
+/* 2. Build card grid using flex-wrap */
+#projects {
+  background: var(--card-bg);
+  /* margin: 1rem 0; */
+  padding: 1rem;
+  box-shadow:var(--shadow)
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+.card-grid {
+  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  flex-wrap: wrap;
+  justify-content: center; /* Center cards horizontally */
+  gap: 20px; /* Adjust gaps between cards */
+  padding: 1rem 0;
+}
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  background: var(--accent);
+  
+}
+
+.card {
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 300px; /* Flex-wrap magic: allows cards to grow, shrink, and wrap */
+  max-width: 350px;
+}
+
+.card-footer button{
+    background-color:rgb(142, 168, 183);
+    border-radius: 5px;
+    border:none;
+    
+}
+/* Responsive Behavior for Header and Nav */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Show hamburger on mobile */
+  }
+
+  .nav-links {
+    display: none; /* Hide nav by default */
+    width: 100%;
+    position: absolute;
+    top: 60px; /* Adjust to be below the header */
+    left: 0;
+    background-color: #444;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-links.show {
+    display: block; /* Show nav when 'show' class is added by JS */
+  }
+  
+  .nav-links ul {
+    flex-direction: column; /* Stack nav items vertically on mobile */
+  }
+
+  .nav-links a {
+    padding: 1rem;
+    border-bottom: 1px solid #555;
+    flex-direction: row;
+  }
+}
+/* Contacts */
+#contact{
+    background: var(--card-bg);
+  /* margin: 1rem 0; */
+  padding: 1rem;
+  padding-top:20px; 
+  box-shadow:var(--shadow)
+}
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+  margin-top: 2rem;
+}
