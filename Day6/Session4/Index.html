@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 6 - Web Dev Keywords</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌐 Web Development Keywords</h1>
+    <p>A simple guide to HTML, CSS, and JavaScript</p>
+  </header>
+
+  <nav>
+    <button class="tab-btn active" onclick="showSection('html', this)">HTML</button>
+    <button class="tab-btn" onclick="showSection('css', this)">CSS</button>
+    <button class="tab-btn" onclick="showSection('js', this)">JavaScript</button>
+  </nav>
+
+  <main>
+    <!-- ========== HTML SECTION ========== -->
+   <section id="html" class="content">
+  <h2>HTML</h2>
+  <div class="card">
+    <h2>HTML Annotated Example</h2>
+    <pre>
+&lt;!DOCTYPE html&gt;  <b><i>This line represents that following document is HTML type</i></b>
+&lt;html lang="en"&gt; <b><i>HTML open tag with attribute lang="en"</i></b>
+&lt;head&gt;  <b><i>head opening tag</i></b>
+  &lt;meta charset="UTF-8"&gt;<i> <b>character set of Unicode UTF-8</b></i>
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; <b><i>viewport width based on device, initial zoom 100%</i></b>
+   &lt;title&gt;Document&lt;/title&gt; <b><i>title of website, appears on tab</i></b>
+&lt;/head&gt; <i><b>head closing tag</b></i>
+&lt;body&gt; <b><i>body opening tag</i></b>
+  Hello World
+&lt;/body&gt; <b><i>body closing tag</i></b>
+&lt;/html&gt; <b><i>HTML closing tag</i></b>
+    </pre>
+    <p>This card shows a <b>basic HTML structure</b> with annotations explaining each tag and attribute.</p>
+  </div>
+</section>
+
+<section class="content">
+  <div class="card">
+    <h2>Metadata & SEO</h2>
+    <pre>
+&lt;meta&gt; → Defines metadata like charset, viewport, description, keywords.
+&lt;link&gt; → Links external resources (CSS, favicon, etc.).
+&lt;style&gt; → Embeds CSS inside HTML
+&lt;script&gt; → Adds JavaScript.
+&lt;base&gt; → Sets a base URL for relative links.
+    </pre>
+  </div>
+</section>
+
+<section class="content">
+  <div class="card">
+    <h2>Formatting Tags</h2>
+    <pre>
+&lt;b&gt; → Bold text (stylistic).
+&lt;strong&gt; → Important text (semantic bold).
+&lt;i&gt; → Italic text (stylistic).
+&lt;em&gt; → Emphasized text (semantic italic).
+&lt;u&gt; → Underlined text.
+&lt;mark&gt; → Highlighted text.
+&lt;small&gt; → Smaller text.
+&lt;del&gt; → Deleted (strikethrough).
+&lt;ins&gt; → Inserted (underline).
+&lt;sup&gt; → Superscript (e.g., 10²).
+&lt;sub&gt; → Subscript (e.g., H₂O).
+&lt;code&gt; → Inline code.
+&lt;kbd&gt; → Keyboard input.
+&lt;samp&gt; → Sample output.
+&lt;abbr&gt; → Abbreviation (with tooltip).
+&lt;cite&gt; → Citation for work.
+&lt;q&gt; → Inline quotation.
+&lt;blockquote&gt; → Long quotation.
+    </pre>
+  </div>
+</section>
+
+<section class="content">
+  <div class="card">
+    <h2>Lists</h2>
+    <pre>
+&lt;ul&gt; → Unordered list (bullets).
+&lt;ol&gt; → Ordered list (numbers).
+&lt;li&gt; → List item.
+&lt;dl&gt; → Definition list.
+&lt;dt&gt; → Definition term.
+&lt;dd&gt; → Definition description.
+    </pre>
+  </div>
+</section>
+
+<section class="content">
+  <div class="card">
+    <h2>Links & Navigation</h2>
+    <pre>
+&lt;a&gt; → Hyperlink.
+&lt;nav&gt; → Section for navigation links.
+    </pre>
+  </div>
+</section>
+
+<section class="content">
+  <div class="card">
+    <h2>Images & Media</h2>
+    <pre>
+&lt;img&gt; → Displays image.
+&lt;picture&gt; → Multiple image sources for responsive design.
+&lt;figure&gt; → Container for images/diagrams.
+&lt;figcaption&gt; → Caption for &lt;figure&gt;.
+&lt;audio&gt; → Embed audio.
+&lt;video&gt; → Embed video.
+&lt;source&gt; → Media source (used inside &lt;audio&gt;, &lt;video&gt;, &lt;picture&gt;).
+&lt;track&gt; → Subtitles/captions for media.
+&lt;iframe&gt; → Embed another page.
+    </pre>
+  </div>
+</section>
+
+<section class="content">
+  <div class="card">
+    <h2>Tables</h2>
+    <pre>
+&lt;table&gt; → Defines a table.
+&lt;tr&gt; → Table row.
+&lt;td&gt; → Table cell (data).
+&lt;th&gt; → Table header cell.
+&lt;thead&gt; → Header section.
+&lt;tbody&gt; → Body section.
+&lt;tfoot&gt; → Footer section.
+&lt;caption&gt; → Table caption.
+&lt;colgroup&gt; → Group of columns.
+&lt;col&gt; → Column formatting.
+    </pre>
+  </div>
+</section>
+
+<section class="content">
+  <div class="card">
+    <h2>Forms & Input</h2>
+    <pre>
+&lt;form&gt; → Defines a form.
+&lt;input&gt; → Input field.
+&lt;textarea&gt; → Multi-line text input.
+&lt;button&gt; → Button.
+&lt;select&gt; → Drop-down list.
+&lt;option&gt; → Item in a drop-down.
+&lt;optgroup&gt; → Group inside &lt;select&gt;.
+&lt;label&gt; → Label for form control.
+&lt;fieldset&gt; → Group of form fields.
+&lt;legend&gt; → Caption for &lt;fieldset&gt;.
+&lt;datalist&gt; → List of predefined input values.
+&lt;output&gt; → Output result.
+&lt;progress&gt; → Progress bar.
+&lt;meter&gt; → Scalar measurement (like temperature, rating).
+    </pre>
+  </div>
+</section>
+
+<section class="content">
+  <div class="card">
+    <h2>Semantic & Layout</h2>
+    <pre>
+&lt;header&gt; → Page/section header.
+&lt;footer&gt; → Page/section footer.
+&lt;main&gt; → Main content.
+&lt;section&gt; → Thematic section.
+&lt;article&gt; → Self-contained content (like blog post).
+&lt;aside&gt; → Sidebar content.
+&lt;address&gt; → Contact information.
+    </pre>
+  </div>
+</section>
+
+<section class="content">
+  <div class="card">
+    <h2>Interactive & Scripting</h2>
+    <pre>
+&lt;details&gt; → Expandable/collapsible content.
+&lt;summary&gt; → Title for &lt;details&gt;.
+&lt;dialog&gt; → Dialog box / popup.
+&lt;canvas&gt; → Drawing graphics via JavaScript.
+&lt;noscript&gt; → Fallback content if JS disabled.
+&lt;template&gt; → Hidden content for reuse.
+&lt;slot&gt; → Placeholder inside web components.
+&lt;shadow&gt; → Shadow DOM root (deprecated).
+    </pre>
+  </div>
+</section>
+
+<section class="content">
+  <div class="card">
+    <h2>Obsolete / Deprecated</h2>
+    <pre>
+&lt;font&gt; → Font styling (use CSS instead).
+&lt;center&gt; → Center content (use CSS instead).
+&lt;big&gt; → Bigger text (use CSS instead).
+&lt;marquee&gt; → Scrolling text (not recommended).
+    </pre>
+  </div>
+</section>
+  
+    <!-- ========== CSS SECTION ========== -->
+    <section id="css" class="content hidden">
+  <h2>CSS</h2>
+
+  <div class="card">
+    <h2>Introduction</h2>
+    <pre>
+CSS is used to design, style and layout of webpage.
+<strong>Basic Terminologies:</strong>
+- <strong>Selectors :</strong> Used to select specific elements.
+- <strong>Properties :</strong> Define styling aspects.
+- <strong>Values :</strong> Assign specific styles.
+<strong>Ways to include CSS:</strong>
+- Inline CSS
+- Internal CSS
+- External CSS
+    </pre>
+  </div>
+
+  <div class="card">
+    <h2>Text & Font</h2>
+    <pre>
+color → Text color.
+font-family → Font type (e.g., Arial, Verdana).
+font-size → Size of the text.
+font-weight → Thickness (normal, bold, 100–900).
+font-style → Italic, normal, oblique.
+text-align → Align text (left, center, right, justify).
+text-decoration → Underline, line-through, none.
+text-transform → Uppercase, lowercase, capitalize.
+letter-spacing → Space between letters.
+word-spacing → Space between words.
+line-height → Line spacing.
+white-space → How spaces/wraps are handled.
+direction → Text direction (ltr, rtl).
+vertical-align → Align text vertically in line.
+    </pre>
+  </div>
+
+  <div class="card">
+    <h2>Backgrounds</h2>
+    <pre>
+background-color → Background color.
+background-image → Add an image as background.
+background-repeat → Repeat, no-repeat, repeat-x/y.
+background-position → Position of background.
+background-size → Size (cover, contain, px, %).
+background-attachment → Scroll or fixed background.
+background-clip → Painting area (border-box, content-box).
+background-origin → Positioning area.
+background-blend-mode → How background layers blend.
+    </pre>
+  </div>
+
+  <div class="card">
+    <h2>Box Model</h2>
+    <pre>
+width / height → Element size.
+max-width / max-height → Maximum size.
+min-width / min-height → Minimum size.
+margin → Outside spacing.
+padding → Inside spacing.
+border → Border around element.
+border-radius → Rounded corners.
+box-sizing → Defines how width/height are calculated (content-box, border-box).
+box-shadow → Adds shadow.
+    </pre>
+  </div>
+
+  <div class="card">
+    <h2>Positioning and Display</h2>
+    <pre>
+position → static, relative, absolute, fixed, sticky.
+top, right, bottom, left → Position offsets.
+z-index → Stacking order.
+display → How element is displayed (block, inline, flex, grid, none).
+visibility → visible, hidden, collapse.
+overflow → Handling extra content (visible, hidden, scroll, auto).
+clip / clip-path → Define visible area.
+float → Align left or right.
+clear → Control floating elements.
+    </pre>
+  </div>
+
+  <div class="card">
+    <h2>Flexbox</h2>
+    <pre>
+display: flex → Activates flexbox.
+flex-direction → Row, column, row-reverse, column-reverse.
+flex-wrap → Wrap items or not.
+justify-content → Align items horizontally (center, space-between, etc.).
+align-items → Align items vertically.
+align-content → Align rows.
+flex → Shorthand for grow, shrink, basis.
+flex-grow → Item’s growth factor.
+flex-shrink → Item’s shrink factor.
+flex-basis → Default size of an item.
+order → Item order.
+    </pre>
+  </div>
+
+  <div class="card">
+    <h2>Grid</h2>
+    <pre>
+display: grid → Activates grid.
+grid-template-columns / grid-template-rows → Define rows & columns.
+grid-column-gap / grid-row-gap → Gap between items.
+grid-gap → Shorthand for row + column gap.
+grid-template-areas → Name areas in a grid.
+grid-area → Assign item to area.
+grid-column / grid-row → Span across lines.
+justify-items → Horizontal alignment inside grid cells.
+align-items → Vertical alignment inside grid cells.
+justify-content / align-content → Align whole grid.
+    </pre>
+  </div>
+
+  <div class="card">
+    <h2>Colors and Effects</h2>
+    <pre>
+opacity → Transparency (0 to 1).
+filter → Effects like blur, brightness, grayscale.
+mix-blend-mode → Blending mode with background.
+cursor → Mouse cursor style.
+    </pre>
+  </div>
+
+  <div class="card">
+    <h2>Transitions & Animations</h2>
+    <pre>
+transition → Shorthand for transition effects.
+transition-property → Which property animates.
+transition-duration → Animation time.
+transition-timing-function → Easing (ease, linear, ease-in-out).
+transition-delay → Start delay.
+animation-name → Keyframe animation name.
+animation-duration → Length of animation.
+animation-iteration-count → Number of times.
+animation-direction → Normal, reverse, alternate.
+animation-fill-mode → Defines state before/after animation.
+animation-timing-function → Easing curve.
+    </pre>
+  </div>
+
+  <div class="card">
+    <h2>Transformation</h2>
+    <pre>
+transform → 2D/3D transforms (rotate, scale, skew, translate).
+transform-origin → Transformation origin point.
+perspective → 3D perspective.
+    </pre>
+  </div>
+
+  <div class="card">
+    <h2>Lists and Tables</h2>
+    <pre>
+list-style-type → Bullet/number style.
+list-style-image → Use image for bullets.
+list-style-position → Inside or outside bullets.
+border-collapse → Collapse or separate table borders.
+border-spacing → Space between table cells.
+caption-side → Caption position.
+empty-cells → Show/hide empty cells.
+table-layout → Auto or fixed layout.
+    </pre>
+  </div>
+
+  <div class="card">
+    <h2>Media Responsive</h2>
+    <pre>
+@media → Media queries for responsiveness.
+object-fit → How images/videos fit container (cover, contain).
+object-position → Image/video position inside container.
+    </pre>
+  </div>
+
+  <div class="card">
+    <h2>Miscellaneous</h2>
+    <pre>
+content → Insert content (used with ::before, ::after).
+quotes → Custom quotation marks.
+resize → Make element resizable.
+outline → Outline around element (not part of box model).
+outline-offset → Space between outline & element.
+clip-path → Shape clipping.
+    </pre>
+  </div>
+</section>
+
+    <!-- ========== JAVASCRIPT SECTION ========== -->
+    <section id="js" class="content hidden">
+      <h2>JavaScript</h2>
+      <p>JavaScript is a programming language that makes web pages interactive.  
+      It can update content, validate forms, and handle user events.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Day 6 Lab – Thinkschool</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
