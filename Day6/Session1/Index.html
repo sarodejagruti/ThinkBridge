@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 6 - Web Dev Keywords</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌐 Web Development Keywords</h1>
+    <p>A simple guide to HTML, CSS, and JavaScript</p>
+  </header>
+
+  <nav>
+    <button onclick="showSection('html')">HTML</button>
+    <button onclick="showSection('css')">CSS</button>
+    <button onclick="showSection('js')">JavaScript</button>
+  </nav>
+
+  <main>
+    <section id="html" class="content">
+      <h2>HTML</h2>
+      <p>HTML (HyperText Markup Language) is the standard markup language used to structure web pages. It uses tags like <code>&lt;p&gt;</code>, <code>&lt;div&gt;</code>, and <code>&lt;h1&gt;</code>.</p>
+    </section>
+
+    <section id="css" class="content hidden">
+      <h2>CSS</h2>
+      <p>CSS (Cascading Style Sheets) is used to style HTML elements. It controls colors, layouts, fonts, spacing, and more.</p>
+    </section>
+
+    <section id="js" class="content hidden">
+      <h2>JavaScript</h2>
+      <p>JavaScript is a programming language that makes web pages interactive. It can update content, validate forms, and handle user events.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Day 6 Lab – Thinkschool</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
