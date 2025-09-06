@@ -1,0 +1,39 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beautiful Card</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1 > CSS polish: transitions, <br> transforms, responsive images</h1>
+
+  <div class="card-container">
+    <article class="card">
+      <div class="card-image">
+        <img 
+           src="./images/flower1.webp"
+            srcset="./images/flower2.jpg,
+            ./images/flower3.jpg,
+            ./images/flower4.jpg"
+          
+          sizes="(max-width:600px) 100vw, (max-width:1200px) 50vw, 400px"
+          alt="Modern Architecture"
+          loading="lazy"
+        />
+      </div>
+      <div class="card-content">
+        <h2 class="card-title">Modern Architecture</h2>
+        <p class="card-text">
+          Discover stunning designs and innovative architecture that shape the future of living spaces.
+        </p>
+        <a href="#" class="card-btn">Explore More</a>
+      </div>
+    </article>
+  </div>
+
+</body>
+</html>

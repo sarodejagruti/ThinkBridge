@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="this is the signup form">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SignUp Form</title>
+</head>
+<body>
+
+  <h1 align="center">Signup Form</h1>
+<fieldset>
+  <!-- Table used to create border around form -->
+  <table align="center">
+    <tr>
+      <td>
+        <form action="/submit" method="post" aria-label="SignUp Form">
+
+<fieldset>
+    <legend>Personal information</legend>           
+            
+          <!-- Name -->
+          <label for="name">Full Name:</label><br>
+          <input type="text" id="name" name="name"  required aria-required="true" placeholder="Enter your name here"><br><br>
+
+          <!-- Email -->
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required aria-required="true" placeholder="Enter your email address"><br><br>
+
+          <!-- Password -->
+          <label for="password">Password:</label><br>
+          <input type="password" id="password" name="password"  required aria-required="true" placeholder="Enter your Password" minlength="6"><br><br>
+
+          <!-- Confirm Password -->
+          <label for="confirm-password">Confirm Password:</label><br>
+          <input type="password" id="confirm-password" name="confirm-password"  required aria-required="true" placeholder="Enter your Confirm Password Here"><br><br>
+
+           <label for="number">Mobile No:</label><br>
+          <input type="text" id="name" name="name" required aria-required="true"  placeholder="Enter your Mobile No"><br><br>
+
+          <!-- Gender -->
+          
+            <legend>Gender</legend>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+          </fieldset>
+          <br>
+
+          <!-- Hobbies -->
+          <fieldset>
+            <legend>Hobbies</legend>
+            <input type="checkbox" id="reading" name="hobbies" value="Reading">
+            <label for="reading">Reading</label>
+            <input type="checkbox" id="music" name="hobbies" value="Music">
+            <label for="music">Music</label>
+            <input type="checkbox" id="sports" name="hobbies" value="Sports">
+            <label for="sports">Sports</label>
+          </fieldset>
+          <br>
+
+      <!-- City -->
+          <label for="city">City: </label><br />
+          <select id="city" name="city" required aria-required="true">
+            <option value="">-- Select City --</option>
+            <option value="pune">Pune</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="delhi">Delhi</option>
+            <option value="bangalore">Bangalore</option>
+          </select>
+          <br /><br />
+
+
+
+   <option value="delhi">Delhi</option>
+            <option value="bangalore">Bangalore</option>
+          </select>
+          <p>Please select your city of residence.</p>
+          <br>
+
+          <!-- Bio -->
+          <label for="bio">Short Bio:</label><br>
+          <textarea id="bio" name="bio" rows="4" cols="40"></textarea><br><br>
+
+          <!-- Buttons -->
+          <div align="center">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </div>
+
+        </form>
+      </td>
+    </tr>
+  </table>
+</fieldset>
+
+</body>
+</html>

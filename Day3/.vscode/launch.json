@@ -1,0 +1,6 @@
+{
+  "type": "node",
+  "request": "launch",
+  "name": "Run App",
+  "program": "${workspaceFolder}/app.js"
+}
